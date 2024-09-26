@@ -7,8 +7,6 @@ Este proyecto es una página web sencilla e intuitiva para un restaurante de com
 Puedes visitar la página web en el siguiente enlace:
 [Ver Página Web - Comida Mexicana](https://maxtwt15.github.io/Pagina-WEB-Sencilla---Comida-Mexicana.github.io/)
 
-![Vista Previa](https://via.placeholder.com/1000x500.png?text=Comida+Mexicana)
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **HTML5**: Estructura básica del contenido de la página.
