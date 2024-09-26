@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fef3e3; /* Fondo de la página */
+    background-color: #fef3e3; 
 }
 
 /* Header con imagen de fondo y texto superpuesto */
 .header {
     height: 100vh; /* El header ocupa toda la pantalla */
-    background-image: url('img/Restaurante\ Mexicano.png'); /* Ruta de la imagen de fondo */
+    background-image: url('img/Restaurante Mexicano.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* La imagen cubre toda el área */
     background-position: center; /* La imagen se centra */
     background-repeat: no-repeat;
@@ -40,6 +40,24 @@ body {
     font-size: 1.5rem;
     margin-top: 10px;
 }
+
+/* Estilos para el Botón Call to Action */
+.cta-button {
+    display: inline-block;
+    background-color: #cc3300;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Espacio entre el texto y el botón */
+}
+
+.cta-button:hover {
+    background-color: #ff6600; /* Color al pasar el cursor */
+}
+
 
 /* Navegación */
 nav {
@@ -73,6 +91,32 @@ nav a:hover {
 
 .contenido p {
     font-size: 1.2rem;
+}
+
+/* Estilos para la sección de la historia */
+.historia {
+    background-color: #f9f3e3; /* Fondo con color suave */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.historia h2 {
+    font-size: 2.5rem;
+    color: #cc3300;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.historia strong {
+    color: #cc3300; /* Destaca el nombre del restaurante */
 }
 
 /* Cards del menú */
