@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Tradicional Mexicano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header con imagen de fondo -->
+    <header class="header">
+        <div class="header-content">
+            <h1>El Sazón Mexicano</h1>
+            <p>¡Sabor tradicional que conquista!</p>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Menú</a>
+        <a href="#">Reservaciones</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Sección de contenido -->
+    <section class="contenido">
+        <h2>Bienvenido a nuestro menú</h2>
+        <p>Disfruta de lo mejor de la gastronomía mexicana.</p>
+
+        <!-- Cards del menú -->
+        <div class="menu">
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/0f/24/1f/0f241fab71469f9b1487025d39f5b56c.jpg" alt="Taco">
+                <h3>Tacos</h3>
+                <p>Deliciosos tacos al pastor con salsa tradicional.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/cb/20/bd/cb20bdbf333f7be817f0ca4977b0da9b.jpg" alt="Enchilada">
+                <h3>Enchiladas</h3>
+                <p>Enchiladas rojas con queso y pollo deshebrado.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/2d/0b/3c/2d0b3c61dd9efda50afc8c0061123b6a.jpg" alt="Guacamole">
+                <h3>Guacamole</h3>
+                <p>Guacamole fresco con totopos crujientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Reservaciones -->
+<section id="reservaciones" class="reservaciones">
+    <h2>Reservaciones</h2>
+    <p>Reserva tu mesa fácilmente. ¡Te esperamos para disfrutar de nuestra comida tradicional!</p>
+    
+    <!-- Formulario de reservaciones -->
+    <form class="formulario-reservaciones">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+
+        <label for="fecha">Fecha de la Reserva:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora de la Reserva:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="personas">Número de Personas:</label>
+        <input type="number" id="personas" name="personas" min="1" placeholder="¿Cuántas personas?" required>
+
+        <button type="submit">Reservar</button>
+    </form>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna duda o sugerencia? ¡Estamos aquí para ayudarte!</p>
+
+    <!-- Formulario de contacto -->
+    <form class="formulario-contacto">
+        <label for="nombre-contacto">Nombre Completo:</label>
+        <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Ingresa tu nombre completo" required>
+
+        <label for="email-contacto">Correo Electrónico:</label>
+        <input type="email" id="email-contacto" name="email-contacto" placeholder="Ingresa tu correo electrónico" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Restaurante El Sazón Mexicano | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

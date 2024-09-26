@@ -1,0 +1,228 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef3e3; /* Fondo de la página */
+}
+
+/* Header con imagen de fondo y texto superpuesto */
+.header {
+    height: 100vh; /* El header ocupa toda la pantalla */
+    background-image: url('img/Restaurante\ Mexicano.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubre toda el área */
+    background-position: center; /* La imagen se centra */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necesario para posicionar el contenido */
+}
+
+/* Contenedor del texto del header */
+.header-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #ffcc99;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+/* Sección de contenido */
+.contenido {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffebcc;
+}
+
+.contenido h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+}
+
+/* Cards del menú */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Sección de Reservaciones */
+.reservaciones {
+    padding: 40px 20px;
+    background-color: #fff7e6;
+    text-align: center;
+}
+
+.reservaciones h2 {
+    font-size: 2rem;
+    color: #cc3300;
+}
+
+.reservaciones p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.formulario-reservaciones {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffebcc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-reservaciones label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.formulario-reservaciones input,
+.formulario-reservaciones button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-reservaciones button {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.formulario-reservaciones button:hover {
+    background-color: #ff5733;
+}
+
+/* Sección de Contacto */
+.contacto {
+    padding: 40px 20px;
+    background-color: #ffebcc;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    color: #cc3300;
+}
+
+.contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contacto button {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.formulario-contacto button:hover {
+    background-color: #ff5733;
+}
+
+/* Footer */
+.footer {
+    background-color: #ff9966;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
