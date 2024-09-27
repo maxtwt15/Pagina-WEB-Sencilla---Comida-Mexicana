@@ -7,27 +7,30 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fef3e3; 
+    background-color: #fef3e3;
+    padding-top: 60px;
 }
+
+/* -----Inicio de CSS Header ----- */
 
 /* Header con imagen de fondo y texto superpuesto */
 .header {
     height: 100vh; /* El header ocupa toda la pantalla */
-    background-image: url('img/Restaurante Mexicano.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* La imagen cubre toda el área */
-    background-position: center; /* La imagen se centra */
+    background-image: url('img/Restaurante Mexicano.png'); 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Necesario para posicionar el contenido */
+    position: relative; 
 }
 
 /* Contenedor del texto del header */
 .header-content {
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
 }
@@ -41,7 +44,10 @@ body {
     margin-top: 10px;
 }
 
-/* Estilos para el Botón Call to Action */
+/* -----Fin de CSS Header ----- */
+
+/* -----Inicio de CSS Botón Call to Action ----- */
+
 .cta-button {
     display: inline-block;
     background-color: #cc3300;
@@ -51,33 +57,103 @@ body {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin-top: 15px; /* Espacio entre el texto y el botón */
+    margin-top: 15px;
 }
 
 .cta-button:hover {
-    background-color: #ff6600; /* Color al pasar el cursor */
+    background-color: #ff6600;
 }
 
+/* -----Fin de CSS Botón Call to Action ----- */
 
-/* Navegación */
+/* -----Inicio de CSS Navegación ----- */
+
 nav {
-    background-color: #ffcc99;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #ffcc99; 
     padding: 10px;
-    text-align: center;
+    text-align: center; 
+    z-index: 1000; 
+    transition: background-color 0.3s ease-in-out;
 }
 
+/* Estilos para los enlaces dentro del nav */
 nav a {
-    color: #333;
+    color: #333; 
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2rem;
 }
 
+/* Efecto hover en los enlaces */
 nav a:hover {
     color: #ff5733;
 }
 
-/* Sección de contenido */
+/* Clase para el nav cuando se hace scroll */
+.nav-scroll {
+    background-color: #ff9966;
+}
+
+/* -----Fin de CSS Navegación ----- */
+
+/* -----Inicio de CSS Sección Historia Modificado----- */
+
+.historia {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;  
+    height: 100vh;           /* La sección ocupa toda la pantalla */
+    background-image: url('img/Mexico Aesthetic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px;
+}
+
+/* Fondo oscuro para hacer el texto más legible */
+.historia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(34, 34, 34, 0.7); 
+    z-index: 1; 
+}
+
+/* Estilo del h2 */
+.historia h2 {
+    position: relative;
+    text-align: center; /* Centra el texto del h2 */
+    z-index: 2;
+    font-size: 2.5rem;
+    color: #ffcc00; /* Color del h2 */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos */
+.historia p {
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Centra el texto de los párrafos */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+/* -----Fin de CSS Sección Historia Modificado-----*/
+
+
+/* -----Inicio de CSS Sección Contenido ----- */
+
 .contenido {
     padding: 40px 20px;
     text-align: center;
@@ -93,33 +169,10 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
-/* Estilos para la sección de la historia */
-.historia {
-    background-color: #f9f3e3; /* Fondo con color suave */
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 50px 0;
-}
+/* -----Fin de CSS Sección Contenido -----*/
 
-.historia h2 {
-    font-size: 2.5rem;
-    color: #cc3300;
-    margin-bottom: 20px;
-}
+/* -----Inicio de CSS Cards del Menú ----- */
 
-.historia p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.historia strong {
-    color: #cc3300; /* Destaca el nombre del restaurante */
-}
-
-/* Cards del menú */
 .menu {
     display: flex;
     justify-content: space-around;
@@ -154,7 +207,10 @@ nav a:hover {
     color: #666;
 }
 
-/* Sección de Reservaciones */
+/* -----Fin de CSS Cards del Menú ----- */
+
+/* -----Inicio de CSS Sección Reservaciones ----- */
+
 .reservaciones {
     padding: 40px 20px;
     background-color: #fff7e6;
@@ -207,7 +263,10 @@ nav a:hover {
     background-color: #ff5733;
 }
 
-/* Sección de Contacto */
+/* -----Fin de CSS Sección Reservaciones ----- */
+
+/* -----Inicio de CSS Sección Contacto ----- */
+
 .contacto {
     padding: 40px 20px;
     background-color: #ffebcc;
@@ -261,12 +320,19 @@ nav a:hover {
     background-color: #ff5733;
 }
 
-/* Footer */
+/* -----Fin de CSS Sección Contacto ----- */
+
+/* -----Inicio de CSS Footer ----- */
+
 .footer {
     background-color: #ff9966;
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
 }
 
+.footer p {
+    font-size: 1rem;
+}
+
+/* -----Fin de CSS Footer ----- */
